@@ -1,0 +1,11 @@
+language: python
+python:
+  - "2.7"
+# Normally, this is a command to install dependencies
+# We're just going to install a linter
+install:
+  - pip install pyflakes
+# Normally, this is a command to run tests
+# We're just going to do syntax checking
+script:
+  - pyflakes *.py 
